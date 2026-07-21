@@ -2,7 +2,7 @@
 
 A Chinese-first, Markdown-native, token-efficient project memory skill for coding agents.
 
-**Status: `v0.1.0-alpha`**
+**Status: `v0.1.1-alpha`**
 
 MemPilot helps individual developers and small teams maintain long-running Vibe Coding projects. It creates human-readable project memory from the actual codebase, routes tasks to the most relevant module, reads only matching Markdown sections, and updates memory through minimal patches.
 
@@ -13,7 +13,10 @@ Key principles:
 - Top-1 module routing
 - section-level reading
 - incremental memory writes
+- proactive maintenance proposals when thresholds are hit
 - periodic health checks and cleanup
+- non-Git fallback based on session file changes
+- lightweight memory-decay sampling
 - Chinese project memory, original code identifiers preserved
 
 The primary documentation is available in Chinese in [`README.md`](README.md).
