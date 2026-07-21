@@ -1,0 +1,18 @@
+vue-admin-demo/
+├── package.json
+├── vite.config.ts
+└── src/
+    ├── router/
+    │   └── index.ts
+    ├── views/
+    │   ├── customers/
+    │   ├── products/
+    │   └── login/
+    ├── api/
+    │   ├── customers.ts
+    │   ├── products.ts
+    │   └── auth.ts
+    ├── stores/
+    │   ├── auth.ts
+    │   └── app.ts
+    └── components/

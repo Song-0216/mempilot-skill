@@ -1,0 +1,36 @@
+name: Feature request
+description: 提议一个保持轻量和低 Token 的改进
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你遇到的实际问题
+      description: 请先描述问题，不要只描述想要的功能
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+    validations:
+      required: true
+  - type: textarea
+    id: cost
+    attributes:
+      label: 对 Token 和维护成本的影响
+      description: 这个方案会增加哪些固定上下文或写入负担？
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: 影响范围
+      options:
+        - SKILL.md 路由
+        - references 流程
+        - assets 模板
+        - 文档与示例
+        - Agent 兼容性
+        - 其他

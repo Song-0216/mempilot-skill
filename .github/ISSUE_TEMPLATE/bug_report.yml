@@ -1,0 +1,53 @@
+name: Bug report
+description: 报告 MemPilot 的错误行为或规则失效
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: agent
+    attributes:
+      label: 使用的 Agent
+      options:
+        - OpenAI Codex / GPT 编程 Agent
+        - Claude Code
+        - Cursor
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: 项目类型与技术栈
+      placeholder: 例如 Vue 3 + TypeScript + FastAPI
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: 原始用户命令
+      description: 请粘贴触发 MemPilot 的原始文字
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: 读取或修改的文件
+      description: 请勿包含私有代码、密钥或客户数据
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 最小复现步骤
+    validations:
+      required: true
